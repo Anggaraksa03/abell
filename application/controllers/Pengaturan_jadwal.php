@@ -13,7 +13,7 @@ class Pengaturan_jadwal extends CI_Controller {
 		$data = array(
 			'title' => "Pengaturan Jadwal Bell",
 			'hari' => $this->pengaturan_jadwal_model->get_hari(),
-			'jadwal' => $this->pengaturan_jadwal_model->get_all_hari(),
+			'jadwal' => $this->pengaturan_jadwal_model->get_jadwal(),
 			'audio' => $this->pengaturan_jadwal_model->get_audio(),
 			'jadwal_hari' => $this->jadwal_model->get_hari()
 		);
@@ -23,14 +23,14 @@ class Pengaturan_jadwal extends CI_Controller {
 	}
 
 	public function jadwal(){
-		$data = $this->pengaturan_jadwal_model->get_all_hari();
+		$data = $this->pengaturan_jadwal_model->get_jadwal();
 		echo json_encode($data);
 	}
 
 	public function addjadwal(){
 		$data = array(
 			'title' => "Pengaturan Jadwal Bell",
-			'jadwal' => $this->pengaturan_jadwal_model->get_all_hari(),
+			'jadwal' => $this->pengaturan_jadwal_model->get_jadwal(),
 			'hari' => $this->pengaturan_jadwal_model->get_hari(),
 			'audio' => $this->pengaturan_jadwal_model->get_audio()
 		);

@@ -13,11 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="row">
                 <div class="col-12 col-md-12 col-lg-12">
 
-                <?php if(validation_errors()) : ?>
-                <div class="alert alert-danger" role="alert">
-                    <?= validation_errors(); ?>
-                </div>
-                <?php endif; ?>
+                
                 <?= form_error('menu', '<div class="alert alert-danger" role="alert">','</div>'); ?>
                 <?= $this->session->flashdata('message') ?>   
 

@@ -147,7 +147,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	id="modaledit<?= $j['id'] ?>"
 	tabindex="-1"
 	role="dialog"
-	aria-labelledby="additemLabel"
+	aria-labelledby="edititemLabel"
 	aria-hidden="true"
 >
 	<div class="modal-dialog" role="document">
@@ -187,7 +187,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <div class="section-title">Audio Bell</div>
                     <select class="form-control select2" name="audio">
                         <?php foreach($audio as $a) : ?>
-                        <option value="<?= $a['id'] ?>"> <?= $a['file_name'] ?> </option>    
+                        <option value="<?= $a['id'] ?>" <?= $j['audio'] == $a['file_name'] ? 'selected' : '' ?> > <?= $a['file_name'] ?> </option>    
                         <?php endforeach; ?>                  
                     </select>										                                        
                 </div>

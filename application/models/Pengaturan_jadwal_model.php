@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Pengaturan_jadwal_model extends CI_Model {
     private $_table = "jadwal";    
 
-    public function get_all_hari(){
+    public function get_jadwal(){
         $this->db->select('jadwal.*, hari.hari as hari, audio.file_name as audio');        
         $this->db->join('hari', 'hari.id = jadwal.hari', 'left');    
         $this->db->join('audio', 'audio.id = jadwal.audio', 'left');
