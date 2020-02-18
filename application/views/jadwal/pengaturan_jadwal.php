@@ -59,7 +59,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<td><?= $j['keterangan'] ?></td>
 											<td>												
 												<a href="" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modaledit<?= $j['id'] ?>"> <i class="fas fa-edit"></i> </a>
-												<a href='<?= base_url("pengaturan_jadwal/deletejadwal/") . $j["id"] ?>' class="btn btn-danger btn-sm" ><i class="fas fa-trash"></i></a>
+												<a href='<?= base_url("pengaturan_jadwal/deletejadwal/") . $j["id"] ?>' onclick="return confirm('yakin ingin menghapus ?');" class="btn btn-danger btn-sm" ><i class="fas fa-trash"></i></a>
 											</td>
 										</tr>
 										<?php endforeach; ?>
