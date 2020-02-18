@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </div>
                   <div class="card-body">
                   
-                    <div class="table-responsive">
+                    <div class="table">
                       <table class="table table-bordered" id="table-1">
                         <thead>
                           <tr>
