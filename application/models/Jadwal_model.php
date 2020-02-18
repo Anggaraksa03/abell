@@ -14,6 +14,12 @@ class Jadwal_model extends CI_Model {
         return $this->db->get_where($this->_table)->result_array();
     }    
 
+    public function nama_hari()
+    {
+        return $this->db->get('hari')->result_array();        
+    }
+
+
 }
 
 /* End of file Jadwal_model.php */

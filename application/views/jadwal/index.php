@@ -10,15 +10,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </div>
 
           <div class="section-body">
+          
             <div class="row">
-              <div class="col-12 col-md-12 col-lg-12">
+              <div class="col-12 col-md-12 col-lg-12">            
                 <div class="card text-center">
                   <div class="card-header">
-                    <h4 style="font-size: 28px;">Jadwal Bell Hari <?= nama_hari(date('Y-m-d')); ?></h4>                    
+                    <h4 style="font-size: 28px;">Jadwal Bell Hari <?= nama_hari(date('Y-m-d')); ?></h4>                           
                   </div>
                   <div class="card-body">
 
-                    <div class="table-responsive">
+                  <div class="table-responsive">
                       <table class="table table-bordered" id="table-1">
                         <thead>
                           <tr>
@@ -44,6 +45,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </tbody>
                       </table>
                     </div>
+                      </div>
+                   
                   </div>
                 </div>
               </div>              
